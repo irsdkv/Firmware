@@ -561,7 +561,7 @@ void TAP_ESC::cycle()
 			if (_packet.msg_id == ESCBUS_MSG_ID_RUN_INFO) {
 				RunInfoRepsonse &feed_back_data = _packet.d.rspRunInfo;
 
-				if (feed_back_data.channelID < esc_status_s::CONNECTED_ESC_MAX) {
+				if (feed_back_data.channelID < esc_status_s::CONNECTED_ESC_MAX_OLD) {
 					_esc_feedback.esc[feed_back_data.channelID].esc_rpm = feed_back_data.speed;
 					_esc_feedback.esc[feed_back_data.channelID].esc_state = feed_back_data.ESCStatus;
 					_esc_feedback.esc[feed_back_data.channelID].esc_vendor = esc_status_s::ESC_VENDOR_TAP;
