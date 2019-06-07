@@ -903,7 +903,7 @@ void UavcanServers::cb_enumeration_getset(const uavcan::ServiceCallResult<uavcan
 
 		uavcan::protocol::param::GetSet::Response resp = result.getResponse();
 		uint8_t esc_index = (uint8_t)resp.value.to<uavcan::protocol::param::Value::Tag::integer_value>();
-		esc_index = math::min((uint8_t)(uavcan::equipment::esc::RawCommand::FieldTypes::cmd::MaxSize - 1), esc_index);
+		esc_index = math::min((uint8_t)(esc_status_s::CONNECTED_ESC_MAX - 1), esc_index);
 		_esc_enumeration_index = math::max(_esc_enumeration_index, (uint8_t)(esc_index + 1));
 
 		_esc_enumeration_ids[esc_index] = result.getCallID().server_node_id.get();
@@ -925,7 +925,7 @@ void UavcanServers::cb_enumeration_getset(const uavcan::ServiceCallResult<uavcan
 void UavcanServers::cb_enumeration_save(const uavcan::ServiceCallResult<uavcan::protocol::param::ExecuteOpcode> &result)
 {
 	const bool this_is_the_last_one =
-		_esc_enumeration_index >= uavcan::equipment::esc::RawCommand::FieldTypes::cmd::MaxSize - 1 ||
+		_esc_enumeration_index >= esc_status_s::CONNECTED_ESC_MAX - 1 ||
 		_esc_enumeration_index >= _esc_count;
 
 	if (!result.isSuccessful()) {

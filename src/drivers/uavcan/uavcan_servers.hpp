@@ -193,7 +193,7 @@ private:
 
 	// ESC enumeration
 	bool _esc_enumeration_active = false;
-	uint8_t _esc_enumeration_ids[uavcan::equipment::esc::RawCommand::FieldTypes::cmd::MaxSize];
+	uint8_t _esc_enumeration_ids[esc_status_s::CONNECTED_ESC_MAX];
 	uint8_t _esc_enumeration_index = 0;
 	uint8_t _esc_count = 0;
 
