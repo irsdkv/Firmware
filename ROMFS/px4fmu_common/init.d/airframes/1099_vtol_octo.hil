@@ -58,7 +58,8 @@ then
 #	param set VT_FW_MOT_OFFID 12345678
 fi
 
+param set SYS_HITL 1
+
 set MAV_TYPE 23
 
-set MIXER_FILE etc/mixers-sitl/standard_vtol_octo_sitl.main.mix
-set MIXER custom
+set MIXER standard_vtol_octo_hitl

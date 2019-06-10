@@ -39,7 +39,8 @@ px4_add_romfs_files(
 	1001_rc_quad_x.hil
 	1002_standard_vtol.hil
 	1100_rc_quad_x_sih.hil
-	
+	1099_standard_vtol_octo.hil
+
 	# [2000, 2999] Standard planes"
 	2100_standard_plane
 	2105_maja
@@ -127,6 +128,7 @@ px4_add_romfs_files(
 	13010_claire
 	13012_convergence
 	13013_deltaquad
+	13099_vtol_octo
 
 	# [14000, 14999] Tri Y
 	14001_tri_y_yaw+
@@ -135,7 +137,7 @@ px4_add_romfs_files(
 	15001_coax_heli
 
 	16001_helicopter
-	
+
 	24001_dodeca_cox
 
 	50000_generic_ground_vehicle
