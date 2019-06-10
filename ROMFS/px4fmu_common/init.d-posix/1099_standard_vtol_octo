@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# @name HIL Standard VTOL OctoPlane
+# @name Standard VTOL OctoPlane
 #
 # @type Standard Octo VTOL
 # @class VTOL
