@@ -1,24 +1,9 @@
 #!/bin/sh
 #
-# @name HIL Standard VTOL OctoPlane
+# @name Standard octo VTOL
 #
-# @type Standard Octo VTOL
+# @type Standard VTOL
 # @class VTOL
-#
-# @maintainer Ildar Sadykov <isadykov@arrival.com>
-#
-# @output MAIN1 motor 1
-# @output MAIN2 motor 2
-# @output MAIN3 motor 3
-# @output MAIN4 motor 4
-# @output MAIN5 motor 5
-# @output MAIN6 motor 6
-# @output MAIN7 motor 7
-# @output MAIN8 motor 8
-# @output AUX1 Throttle
-# @output AUX2 Aileron 1
-# @output AUX3 Aileron 2
-# @output AUX4 Elevator
 #
 
 sh /etc/init.d/rc.vtol_defaults
