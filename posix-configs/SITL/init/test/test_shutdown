@@ -32,6 +32,7 @@ fw_att_control start
 wind_estimator start
 
 #mixer load /dev/pwm_output0 ROMFS/sitl/mixers/standard_vtol_sitl.main.mix
+#mixer load /dev/pwm_output0 ROMFS/sitl/mixers/standard_vtol_octo_sitl.main.mix
 
 ver all
 

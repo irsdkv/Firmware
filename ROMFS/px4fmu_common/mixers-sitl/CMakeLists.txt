@@ -36,5 +36,6 @@ px4_add_romfs_files(
 	plane_sitl.main.mix
 	over_sitl.main.mix
 	standard_vtol_sitl.main.mix
+	standard_vtol_octo_sitl.main.mix
 	tiltrotor_sitl.main.mix
 )
